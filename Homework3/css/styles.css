@@ -1,0 +1,173 @@
+html{
+    background: #00ABE4;
+}
+.item1{
+    grid-area: header;
+    height: 100px;
+}
+#marioText{
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 30px;
+    align-content: center;
+
+
+}
+.item2{
+    grid-area: nav;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 8px;
+}
+
+.item3{
+    grid-area: words;
+    font-weight: bold;
+    font-size: 30px;
+    align-items: center;
+    align-content: center;
+    grid-column: 2/6;
+    grid-row: 3/4;
+    height: 150px;
+    border-right: 1px solid black;
+
+}
+
+.item5{
+    grid-area: header;
+    grid-column: 3/6;
+    grid-row: 1/2;
+    text-align:center;
+    align-content: center;
+    justify-self: center;
+}
+.gridContainer{
+    display: grid;
+    grid-template-areas: 'header header header header header header header'
+                'nav nav nav nav nav nav nav'
+                'words words words words words words words'
+                'bottom bottom bottom bottom bottom bottom bottom';
+    padding: 10px;
+    background: aqua;
+}
+.item1 > #marioPizza{
+    grid-area: header;
+}
+#marioPizza{
+    height: 100%;
+}
+#mario{
+    height: 75%;
+}
+.item6{
+    grid-area: header;
+    grid-column: 7/8;
+    grid-row: 4/6;
+    height : 35%;
+}
+.gridContainer2{
+    grid-area: bottom;
+    height: 325px;
+    grid-column: 1/6;
+    grid-row: 4/4;
+    border: 1px solid black;
+
+
+}
+form{
+    display: grid;
+    grid-template: 'name name name name name'
+                    'age age age age age'
+                    'topping topping topping topping topping'
+                    'games games games games games'
+                    'box box box box box'
+                    'box box box box box'
+                    'box box box box box'
+                    'box box box box box'
+                    'button button button button button';
+    /*justify-content: center;*/
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    width: 100%;
+}
+#Name{
+    grid-area: name;
+    grid-column: 2/5;
+    grid-row: 1/2;
+    text-align: right;
+}
+#Age{
+    grid-area: age;
+    grid-column: 2/5;
+    grid-row: 2/3;
+}
+#Topping{
+    grid-area: topping;
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+.age{
+    grid-area: age;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+select{
+    grid-area: topping;
+    grid-column: 2/5;
+    width : 100%;
+}
+.favoriteGames{
+    grid-area: games;
+    grid-column: 1/5;
+    grid-row: 4/5;
+}
+.checks{
+    grid-area: box;
+    grid-row: 4/5;
+    grid-column: 1/5;
+}
+#kart{
+    grid-area: box;
+    grid-row: 5/6;
+    grid-column: 1/2;
+}
+#party{
+    grid-area: box;
+    grid-row: 6/7;
+    grid-column: 1/2;
+}
+#bros{
+    grid-area: box;
+    grid-row: 7/8;
+    grid-column: 1/2;
+}
+#game1{
+    grid-area: box;
+    grid-row: 5/6;
+    grid-column: 2/3;
+
+}
+#game2{
+    grid-area: box;
+    grid-row: 6/7;
+    grid-column: 2/3;
+}
+#game3{
+    grid-area: box;
+    grid-row: 7/8;
+    grid-column: 2/3;
+}
+.button{
+    grid-area: button;
+    grid-row: 8/9;
+    grid-column: 2/3;
+    height: 30px;
+    background-color: yellow;
+}
+a:link{
+    text-decoration: none;
+    padding-left: 30px;
+}
+
