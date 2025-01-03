@@ -333,6 +333,7 @@ function resetGame(){
         game.diceState[i].hold = false;
         game.diceState[i].num = 1;
         game.diceState[i].dice.innerText = game.diceState[i].num;
+        game.diceState[i].dice.style.backgroundColor = "#63c1a0";
     }
     game.gameOver = false;
     game.bonus = false;
@@ -367,6 +368,7 @@ function resetGame(){
     document.getElementById("bonus").style.backgroundColor = "#ecb32d";
     document.getElementById("score").innerText = `Total Score: ${scores.totalScore}, Rolls: ${game.numRolls}, Current Roll: ${scores.rollNumber}`;
     document.getElementById("bonus").innerText = `Bonus: ${scores.bonus} (Target: ${game.bonusNum}), Pts Needed: ${game.bonusNum - scores.totalScore}`
+    
 
 }
 //Random number generator from 1-6 for a proper dice
